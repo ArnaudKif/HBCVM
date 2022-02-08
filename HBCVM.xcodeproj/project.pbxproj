@@ -34,18 +34,10 @@
 		965FBF7227AAC4A600C1DF47 /* FakeSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FBF7127AAC4A600C1DF47 /* FakeSession.swift */; };
 		965FBF7427AAC5A800C1DF47 /* matches.json in Resources */ = {isa = PBXBuildFile; fileRef = 965FBF7327AAC5A800C1DF47 /* matches.json */; };
 		965FBF7627AAC62B00C1DF47 /* MatchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FBF7527AAC62B00C1DF47 /* MatchServiceTests.swift */; };
-		D4D98E2189F63A7DDC4B28D6 /* Pods_HBCVM_HBCVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C3EB088C83F94289F61127 /* Pods_HBCVM_HBCVMUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		965FBF3227AAB68400C1DF47 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 965FBF1327AAB68300C1DF47 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 965FBF1A27AAB68300C1DF47;
-			remoteInfo = HBCVM;
-		};
-		965FBF3C27AAB68400C1DF47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 965FBF1327AAB68300C1DF47 /* Project object */;
 			proxyType = 1;
@@ -69,7 +61,6 @@
 		965FBF2C27AAB68400C1DF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		965FBF3127AAB68400C1DF47 /* HBCVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBCVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965FBF3527AAB68400C1DF47 /* HBCVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCVMTests.swift; sourceTree = "<group>"; };
-		965FBF3B27AAB68400C1DF47 /* HBCVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBCVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		965FBF5327AAB7B600C1DF47 /* ExtensionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionVC.swift; sourceTree = "<group>"; };
 		965FBF5527AAB7C600C1DF47 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		965FBF5727AAB7D500C1DF47 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
@@ -109,14 +100,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				39C621CE5FF2FE457B2FE63B /* Pods_HBCVMTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		965FBF3827AAB68400C1DF47 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4D98E2189F63A7DDC4B28D6 /* Pods_HBCVM_HBCVMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +145,6 @@
 			children = (
 				965FBF1B27AAB68300C1DF47 /* HBCVM.app */,
 				965FBF3127AAB68400C1DF47 /* HBCVMTests.xctest */,
-				965FBF3B27AAB68400C1DF47 /* HBCVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,26 +286,6 @@
 			productReference = 965FBF3127AAB68400C1DF47 /* HBCVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		965FBF3A27AAB68400C1DF47 /* HBCVMUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 965FBF4B27AAB68400C1DF47 /* Build configuration list for PBXNativeTarget "HBCVMUITests" */;
-			buildPhases = (
-				EB3887B1F6C099263A8F1E0E /* [CP] Check Pods Manifest.lock */,
-				965FBF3727AAB68400C1DF47 /* Sources */,
-				965FBF3827AAB68400C1DF47 /* Frameworks */,
-				965FBF3927AAB68400C1DF47 /* Resources */,
-				88DAA389796E45BA4A37E417 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				965FBF3D27AAB68400C1DF47 /* PBXTargetDependency */,
-			);
-			name = HBCVMUITests;
-			productName = HBCVMUITests;
-			productReference = 965FBF3B27AAB68400C1DF47 /* HBCVMUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,10 +300,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					965FBF3027AAB68400C1DF47 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 965FBF1A27AAB68300C1DF47;
-					};
-					965FBF3A27AAB68400C1DF47 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 965FBF1A27AAB68300C1DF47;
 					};
@@ -362,7 +320,6 @@
 			targets = (
 				965FBF1A27AAB68300C1DF47 /* HBCVM */,
 				965FBF3027AAB68400C1DF47 /* HBCVMTests */,
-				965FBF3A27AAB68400C1DF47 /* HBCVMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -385,13 +342,6 @@
 			files = (
 				965FBF7427AAC5A800C1DF47 /* matches.json in Resources */,
 				9650526A27AD702E00FDB34B /* match.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		965FBF3927AAB68400C1DF47 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,23 +387,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88DAA389796E45BA4A37E417 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HBCVM-HBCVMUITests/Pods-HBCVM-HBCVMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HBCVM-HBCVMUITests/Pods-HBCVM-HBCVMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HBCVM-HBCVMUITests/Pods-HBCVM-HBCVMUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D36E9C76ADA16B342E9EC200 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,28 +403,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HBCVMTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB3887B1F6C099263A8F1E0E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HBCVM-HBCVMUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -534,13 +445,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		965FBF3727AAB68400C1DF47 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -548,11 +452,6 @@
 			isa = PBXTargetDependency;
 			target = 965FBF1A27AAB68300C1DF47 /* HBCVM */;
 			targetProxy = 965FBF3227AAB68400C1DF47 /* PBXContainerItemProxy */;
-		};
-		965FBF3D27AAB68400C1DF47 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 965FBF1A27AAB68300C1DF47 /* HBCVM */;
-			targetProxy = 965FBF3C27AAB68400C1DF47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -794,44 +693,6 @@
 			};
 			name = Release;
 		};
-		965FBF4C27AAB68400C1DF47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDDA78927DC3A1108530CBE0 /* Pods-HBCVM-HBCVMUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RWFYTJZ7R8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnaudkiefer.HBCVMUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HBCVM;
-			};
-			name = Debug;
-		};
-		965FBF4D27AAB68400C1DF47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58CC4B4240D7BD8F1561BA86 /* Pods-HBCVM-HBCVMUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RWFYTJZ7R8;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnaudkiefer.HBCVMUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HBCVM;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -858,15 +719,6 @@
 			buildConfigurations = (
 				965FBF4927AAB68400C1DF47 /* Debug */,
 				965FBF4A27AAB68400C1DF47 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		965FBF4B27AAB68400C1DF47 /* Build configuration list for PBXNativeTarget "HBCVMUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				965FBF4C27AAB68400C1DF47 /* Debug */,
-				965FBF4D27AAB68400C1DF47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

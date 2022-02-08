@@ -80,6 +80,7 @@ class UpdateMatchViewController: UIViewController {
             adressTextField.text = matchToUpdate!.matchAdress
             commentTextField.text = matchToUpdate!.comment
             dateViewPicker.date = matchToUpdate!.date.strToDate()
+            
             _isInHome = matchToUpdate!.isInHome
             _team1Score = matchToUpdate!.team1Score
             _team2Score = matchToUpdate!.team2Score

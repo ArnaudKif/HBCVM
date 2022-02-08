@@ -11,9 +11,7 @@ extension String {
     /// Transforms String to the desired date format -> Date
     func strToDate() -> Date {
         let returnedDate: Date
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "fr_FR")
-        dateFormatter.dateFormat = "EEEE dd MMM yyyy à HH:mm"
+        let dateFormatter = ISO8601DateFormatter()
         if let date = dateFormatter.date(from: self) {
             returnedDate = date
         } else {

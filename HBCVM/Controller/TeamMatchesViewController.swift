@@ -161,8 +161,6 @@ extension TeamMatchesViewController: UIPickerViewDelegate, UIPickerViewDataSourc
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // récupération des données selectionnées
-        // TODO: - Changer les matchs pour l'equipe selectionnée
         isLoadingMatch = true
         switchLoadingActivity(in: true)
         getMatches(with: teamList[row])

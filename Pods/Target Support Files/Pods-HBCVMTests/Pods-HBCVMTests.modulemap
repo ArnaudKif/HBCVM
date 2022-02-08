@@ -1,0 +1,6 @@
+framework module Pods_HBCVMTests {
+  umbrella header "Pods-HBCVMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

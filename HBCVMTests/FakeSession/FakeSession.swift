@@ -17,10 +17,11 @@ struct FakeAlamoResponse {
 }
 
 class MatchSessionFake: AlamoSession {
+    // MARK: - Properties of protocol compliance
     let updateUrl = URL(string: "http://127.0.0.1:8080/update")!
     let dbUrl = URL(string: "http://127.0.0.1:8080/matches")!
 
-
+    // MARK: - Method of protocol compliance
     func loadMatch(with request: URLRequest, callBack: @escaping (DataResponse<Match, AFError>?) -> Void) {
         guard let httpResponse = fakeAlamoResponse.response else {
             callBack(.init(request: nil, response: nil, data: nil, metrics: nil, serializationDuration: 0.0, result: .failure(.explicitlyCancelled)))
@@ -40,9 +41,7 @@ class MatchSessionFake: AlamoSession {
         callBack(dataResponse)
     }
 
-    // MARK: - Method of protocol compliance
     func request(with url: URL, method: HTTPMethod, callBack: @escaping (DataResponse<[Match], AFError>?) -> Void) {
-
         guard let httpResponse = fakeAlamoResponse.response else {
             callBack(.init(request: nil, response: nil, data: nil, metrics: nil, serializationDuration: 0.0, result: .failure(.explicitlyCancelled)))
             return

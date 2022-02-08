@@ -22,7 +22,7 @@ class FakeResponseData {
         let url = bundle.url(forResource: "match", withExtension: "json")!
         return try! Data(contentsOf: url)
     }
-
+    
     static let incorrectData = "error".data(using: .utf8)!
 
     // MARK: - Response

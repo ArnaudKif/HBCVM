@@ -1,0 +1,13 @@
+[
+    {
+        "team2Score": 0,
+        "date": "2000-01-01T00:00:00Z",
+        "teamName": "U13M",
+        "adversaryTeamName": "Test1",
+        "team1Score": 0,
+        "isInHome": true,
+        "id": "11111111-BBBB-0000-AAAA-999999999999",
+        "matchAdress": "Gymnase Courvoisier, Rue Du Breuil 25350 Mandeure",
+        "comment": "RDV au parking"
+    }
+]

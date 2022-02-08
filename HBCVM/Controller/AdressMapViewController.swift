@@ -7,6 +7,12 @@
 
 import UIKit
 
+/*
+ WARNING: This Controller is not yet developed. It is a draft VC
+
+ */
+// TODO: - It will be necessary to transform the address received from the previous VC into a POI (with latitude and longitude, via an API?) then display this point on the map.
+
 class AdressMapViewController: UIViewController {
 
     var adressLabel: String?
@@ -26,15 +32,5 @@ class AdressMapViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

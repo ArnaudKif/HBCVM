@@ -74,15 +74,6 @@
                                     <segue destination="gog-p8-ghG" kind="show" identifier="NewMatchSegue" id="LiE-f2-x8G"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V9p-1w-UeA" userLabel="MatchesTable View">
-                                <rect key="frame" x="20" y="296" width="374" height="507"/>
-                                <color key="separatorColor" red="0.58199816940000004" green="0.24310857059999999" blue="0.40525108580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="separatorInset" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="48U-bA-7Zf"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cQV-rz-CVm"/>
-                                </connections>
-                            </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-wF-mPt">
                                 <rect key="frame" x="0.0" y="414" width="414" height="68"/>
                                 <subviews>
@@ -118,6 +109,18 @@
                                 <color key="textColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V9p-1w-UeA" userLabel="MatchesTable View">
+                                <rect key="frame" x="20" y="301" width="374" height="507"/>
+                                <color key="backgroundColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.58199816940000004" green="0.24310857059999999" blue="0.40525108580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemGray3Color"/>
+                                <color key="sectionIndexTrackingBackgroundColor" systemColor="systemGray3Color"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="48U-bA-7Zf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cQV-rz-CVm"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.58199816940000004" green="0.24310857059999999" blue="0.40525108580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,13 +132,13 @@
                             <constraint firstItem="jbQ-wF-mPt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O7c-4E-Ncr"/>
                             <constraint firstItem="IWN-3H-xrJ" firstAttribute="leading" secondItem="mwq-k8-8Yw" secondAttribute="trailing" id="Ohi-gA-EK7"/>
                             <constraint firstItem="gLe-Ko-zug" firstAttribute="top" secondItem="mwq-k8-8Yw" secondAttribute="bottom" id="Rb1-HO-AqN"/>
-                            <constraint firstItem="V9p-1w-UeA" firstAttribute="top" secondItem="VDf-yW-If1" secondAttribute="bottom" constant="3" id="TBh-B9-zvA"/>
+                            <constraint firstItem="V9p-1w-UeA" firstAttribute="top" secondItem="VDf-yW-If1" secondAttribute="bottom" constant="8" id="TBh-B9-zvA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V9p-1w-UeA" secondAttribute="trailing" constant="20" id="WHG-cJ-h23"/>
                             <constraint firstItem="VDf-yW-If1" firstAttribute="leading" secondItem="gLe-Ko-zug" secondAttribute="trailing" id="WWh-EV-kee"/>
                             <constraint firstItem="mwq-k8-8Yw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i6r-aX-DuU"/>
-                            <constraint firstItem="V9p-1w-UeA" firstAttribute="top" secondItem="gLe-Ko-zug" secondAttribute="bottom" id="npf-ld-9IB"/>
+                            <constraint firstItem="V9p-1w-UeA" firstAttribute="top" secondItem="gLe-Ko-zug" secondAttribute="bottom" constant="5" id="npf-ld-9IB"/>
                             <constraint firstItem="V9p-1w-UeA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oBZ-y5-gYT"/>
-                            <constraint firstItem="V9p-1w-UeA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="ocd-75-FV9"/>
+                            <constraint firstItem="V9p-1w-UeA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-5" id="ocd-75-FV9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDf-yW-If1" secondAttribute="trailing" constant="20" id="pF0-Wr-LEk"/>
                             <constraint firstItem="jbQ-wF-mPt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rye-b4-gDZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IWN-3H-xrJ" secondAttribute="trailing" constant="20" id="zce-V8-54B"/>
@@ -497,36 +500,65 @@ Rue des breuils
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgs-pn-oew">
-                                <rect key="frame" x="9" y="20" width="122" height="31"/>
+                                <rect key="frame" x="9" y="20" width="96" height="37.5"/>
                                 <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37.5" id="0HA-m3-Uuc"/>
+                                </constraints>
                                 <color key="tintColor" red="0.58199816940000004" green="0.24310857059999999" blue="0.40525108580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.backward" catalog="system" title=" Retour"/>
+                                <buttonConfiguration key="configuration" style="gray" image="arrowshape.turn.up.backward" catalog="system" title=" Retour">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="dismiss" destination="gK1-l6-49B" eventType="touchUpInside" id="udc-ug-8nb"/>
                                     <action selector="dismiss" destination="jRW-5L-ifk" eventType="touchUpInside" id="wwU-2q-3Bc"/>
                                     <action selector="goForward" destination="8Gm-Mt-EKm" eventType="touchDragExit" id="VdV-7x-45G"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gbh-qQ-nX4">
+                                <rect key="frame" x="20" y="758" width="374" height="31"/>
+                                <color key="backgroundColor" red="0.58199816940000004" green="0.24310857059999999" blue="0.40525108580000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="frA-QH-OLR"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybride"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="ChangeMapTypeButton:" destination="jRW-5L-ifk" eventType="valueChanged" id="fSF-lb-rFj"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Bg-4f-ch1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lgs-pn-oew" firstAttribute="top" secondItem="1Bg-4f-ch1" secondAttribute="top" constant="20" id="2cr-x6-o8f"/>
+                            <constraint firstItem="Gbh-qQ-nX4" firstAttribute="leading" secondItem="1Bg-4f-ch1" secondAttribute="leading" constant="20" id="30F-vn-9Ta"/>
                             <constraint firstAttribute="bottomMargin" secondItem="GgR-51-8Pu" secondAttribute="bottom" id="3bC-b0-iyn"/>
                             <constraint firstItem="Lgs-pn-oew" firstAttribute="leading" secondItem="1Bg-4f-ch1" secondAttribute="leading" constant="9" id="6T5-O1-ZjO"/>
+                            <constraint firstItem="1Bg-4f-ch1" firstAttribute="trailing" secondItem="Gbh-qQ-nX4" secondAttribute="trailing" constant="20" id="DeD-oD-RTX"/>
+                            <constraint firstItem="1Bg-4f-ch1" firstAttribute="bottom" secondItem="Gbh-qQ-nX4" secondAttribute="bottom" constant="20" id="VjZ-Zs-K0t"/>
                             <constraint firstItem="GgR-51-8Pu" firstAttribute="trailing" secondItem="1Bg-4f-ch1" secondAttribute="trailing" id="Ym8-PO-XKq"/>
+                            <constraint firstItem="1Bg-4f-ch1" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lgs-pn-oew" secondAttribute="trailing" symbolic="YES" id="d7H-pG-WPg"/>
                             <constraint firstItem="GgR-51-8Pu" firstAttribute="top" secondItem="NER-K4-eUa" secondAttribute="topMargin" id="kzE-0w-35C"/>
                             <constraint firstItem="GgR-51-8Pu" firstAttribute="leading" secondItem="1Bg-4f-ch1" secondAttribute="leading" id="n6T-8L-uTU"/>
-                            <constraint firstItem="1Bg-4f-ch1" firstAttribute="trailing" secondItem="Lgs-pn-oew" secondAttribute="trailing" constant="283" id="pGp-wE-s6n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xIO-Y2-AA5"/>
+                    <connections>
+                        <outlet property="mapTypeSegmet" destination="Gbh-qQ-nX4" id="k3g-XO-PaW"/>
+                        <outlet property="ui_map" destination="GgR-51-8Pu" id="BOU-5s-nZH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Gm-Mt-EKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="gK1-l6-49B" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2559" y="620"/>
+            <point key="canvasLocation" x="2557.971014492754" y="618.75"/>
         </scene>
         <!--NewMatchVC-->
         <scene sceneID="Gc5-0J-V7D">
@@ -1050,6 +1082,9 @@ Rue des breuils
         <image name="silhouettte handalleuse couleur" width="239.5" height="307"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

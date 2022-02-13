@@ -1,4 +1,4 @@
-# HBCVM_DB
+# HBCVM
 
 This project is the final project (P12) of the OpenClassRooms formation iOS Application Developer.
 
@@ -21,3 +21,6 @@ These applications are available on the following links:
 - The public application HBCVM: https://github.com/ArnaudKif/HBCVM 
 
 - The server application HBVVM_DB : https://github.com/ArnaudKif/HBCVM_DB 
+
+
+<img width="510" alt="image" src="https://user-images.githubusercontent.com/78606895/153749670-d7efe4f5-0e5d-4a3d-b9cb-756ba8249fa2.png">

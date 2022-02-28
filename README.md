@@ -1,5 +1,32 @@
 # HBCVM
 
+Ce projet est le projet final (P12) de la formation OpenClassRooms développeur d'applications iOS.
+
+Réaliser un projet open source avec un impact social
+
+Compétences évaluées
+- Identifier et conduire un projet à impact social
+
+- Mobiliser ses compétences au profit d'un projet
+
+
+J'ai décidé de travailler sur une application pour les parents des jeunes joueurs d'un club de handball qui affichera les matchs avec toutes les informations importantes pour eux (date, heure, adresse du gymnase, et un commentaire personnalisable). 
+
+Cette application communiquera avec un webservice configuré sur un serveur, qui retournera la liste des matchs à afficher et prendra en compte les différentes modifications des matchs (changement de date, ajout du score, suppression...).
+
+Pour cela, j'ai développé 2 applications : une côté serveur (le webservice) et une application publique qui pourra être installée sur les téléphones des parents. L'application serveur devra être installée directement sur un serveur dédié.
+
+Ces applications sont disponibles sur les liens suivants : 
+
+- L'application publique HBCVM : https://github.com/ArnaudKif/HBCVM 
+
+- L'application serveur HBVVM_DB : https://github.com/ArnaudKif/HBCVM_DB 
+
+
+<img width="510" alt="image" src="https://user-images.githubusercontent.com/78606895/153749670-d7efe4f5-0e5d-4a3d-b9cb-756ba8249fa2.png">
+
+
+------------
 This project is the final project (P12) of the OpenClassRooms formation iOS Application Developer.
 
 Realize an open source project with social impact
@@ -21,6 +48,3 @@ These applications are available on the following links:
 - The public application HBCVM: https://github.com/ArnaudKif/HBCVM 
 
 - The server application HBVVM_DB : https://github.com/ArnaudKif/HBCVM_DB 
-
-
-<img width="510" alt="image" src="https://user-images.githubusercontent.com/78606895/153749670-d7efe4f5-0e5d-4a3d-b9cb-756ba8249fa2.png">
